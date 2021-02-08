@@ -104,9 +104,9 @@ will start from the first index and stop searching if the data is found or the l
 >  <img src="https://user-images.githubusercontent.com/69858580/107122139-12010b80-68c0-11eb-8981-0d19b0059da3.PNG" width="500" height="100" >
 ></p>
 
->##### Algorithm:
->+  ###### Best case: O(1)
->+ ###### Worst Case: O(n)
+>#####**~~****~~** Algorithm:
+>+  Best case: O(1)
+>+  Worst Case: O(n)
 
     // First way...
     i = 1 

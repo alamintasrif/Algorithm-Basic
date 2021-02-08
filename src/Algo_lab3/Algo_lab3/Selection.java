@@ -1,4 +1,4 @@
-package Algo_lab3;
+package Algo_lab3.Algo_lab3;
 
 import java.util.Scanner;
 
