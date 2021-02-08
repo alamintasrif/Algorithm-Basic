@@ -104,29 +104,63 @@ will start from the first index and stop searching if the data is found or the l
 >  <img src="https://user-images.githubusercontent.com/69858580/107122139-12010b80-68c0-11eb-8981-0d19b0059da3.PNG" width="500" height="100" >
 ></p>
 
->#####**~~****~~** Algorithm:
+>##### Algorithm:
 >+  Best case: O(1)
 >+  Worst Case: O(n)
 
-    // First way...
-    i = 1 
-    while i < n && Z != X[i] do
-        i = i+1
+      // First way...
+      i = 1 
+      while i < n && Z != X[i] do           // Z = searching variable
+          i = i+1
 
-    if i < n then
-        FOUND
-    else
-        NOT FOUND
+      if i < n then
+          FOUND
+      else
+          NOT FOUND
 
 
-    // Second Way...
-    flag = FALSE
-    for i = 1 to n
-        if A[i] == key
-            flag = TRUE;
+      // Second Way...
+      flag = FALSE
+      for i = 1 to n
+          if A[i] == key        // key = searching variable
+              flag = TRUE;
     
-    if flag == TRUE
-        FOUND
-    else
-        NOT FOUND
+      if flag == TRUE
+          FOUND
+      else
+          NOT FOUND
+
+
+>### Binary Search
+>
+> **To use binary search, your array / list must be sorted. If it is not sorted then you cannot do binary search. Or else you have to sort the array / list.**
+> <p align="center">
+>  <img src="https://user-images.githubusercontent.com/69858580/107189030-dcb90280-6a12-11eb-9d3c-9e0bd9de0bb8.PNG" width="500" height="150" >
+></p>
+>
+>
+>+  Best case: O(1)
+>+  Worst Case: O(n)
+
+       Algorithm:
+
+       low = 1                          //Start position
+       high = n                         //Last position
+       flag = false
+
+       while low <= high and flag = = false do
+          mid = (low + high) / 2
+          Xm = A[mid]                   // Xm = a veriable where we store our mid variable
+
+          case:
+              Xm < Z : low = mid + 1    // z = searching number
+              Xm > Z : high = mid - 1
+              Xm == Z : flag = true
+
+       if flag == true
+          FOUND
+       else
+          NOT FOUND
+
+       // After looking at the algorithm, you can see that there is an example in the above file(Binary_Search.java) to better understand. 
 
