@@ -98,8 +98,7 @@ where it is stored.**
 >Check each and every data in the list till the desired element
 or value is found.
 >
->Example: Suppose, we want to search 33 from the given array, Searching
-will start from the first index and stop searching if the data is found or the list is over.
+>
 >
 > <p align="center">
 >  <img src="https://user-images.githubusercontent.com/69858580/107122139-12010b80-68c0-11eb-8981-0d19b0059da3.PNG" width="500" height="100" >
@@ -145,8 +144,7 @@ will start from the first index and stop searching if the data is found or the l
 >+  Best case: O(1)
 >+  Worst Case: O(n)
 
-       'Algorithm':
-       '''java
+       Algorithm:
 
        low = 1                          //Start position
        high = n                         //Last position
@@ -160,13 +158,13 @@ will start from the first index and stop searching if the data is found or the l
               Xm < Z : low = mid + 1    // z = searching number
               Xm > Z : high = mid - 1
               Xm == Z : flag = true
-       ```javascript
+       
        if (flag == true){
           FOUND
         }
        else
           NOT FOUND
-       ```
+       
 
        // After looking at the algorithm, you can see that there is an example in the above file(Binary_Search.java) to better understand. 
 
@@ -185,7 +183,31 @@ order.**
 >+ Sorting is also used to represent data in more readable formats.
 > 
 >###### We will Learn: 
-> 1. Selection Sort
-> 2. Insertion Sort
-> 3. Merge Sort
-> 4. Quick Sort
+> 1. `Selection Sort`
+> 2. `Insertion Sort`
+> 3. `Merge Sort`
+> 4. `Quick Sort`
+> <br>
+
+
+>### Selection Sort
+
+
+```javascript
+1. Find the smallest element in the array
+2. Exchange it with the element in the first position
+3. Find the second smallest element and exchange it with the element in the second position
+4. Continue until the array is sorted
+
+Algorithm:
+
+n ← length[A]
+for i ← 1 to n - 1
+    min ← i
+
+    for j ← i + 1 to n
+        if A[j] < A[min]
+            min ← j
+
+    exchange A[i] ↔ A[min]
+```
