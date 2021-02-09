@@ -16,14 +16,14 @@
 
 
 >##### Different types of Algorithms:
->+ Searching Algorithms
->+ Sorting Algorithms
->+ Divide and conquer algorithms
->+ Recursive algorithms
->+ Backtracking algorithms
->+ Brute force algorithms
->+ Greedy Algorithms
->+ Dynamic programming algorithms
+>- [x] Searching Algorithms
+>- [x] Sorting Algorithms
+>- [ ] Divide and conquer algorithms
+>- [ ] Recursive algorithms
+>- [ ] Backtracking algorithms
+>- [ ] Brute force algorithms
+>- [ ] Greedy Algorithms
+>- [ ] Dynamic programming algorithms
 <br><br>
   
 
@@ -72,12 +72,13 @@ constant. The following are common rates of growth-
 <br>
 
 # 1. Searching Algorithms:
->**Search for a target data from a data set.**
+>- [x] **Search for a target data from a data set.**
 >
->**Searching Algorithms are designed to check for an
+>- [x] **Searching Algorithms are designed to check for an
 element or retrieve an element from any data structure
 where it is stored.**
 >
+>###### Why Searching Algorithms:
 >+ **It is used for unsorted and unordered small list of elements.**
 >+ **It has a time complexity of O(n), which means the time is linearly dependent on the number of elements, which is not bad, but not that good too.**
 >+ **It has a very simple implementation.**
@@ -100,9 +101,9 @@ or value is found.
 >Example: Suppose, we want to search 33 from the given array, Searching
 will start from the first index and stop searching if the data is found or the list is over.
 >
-><p align="center">
+> <p align="center">
 >  <img src="https://user-images.githubusercontent.com/69858580/107122139-12010b80-68c0-11eb-8981-0d19b0059da3.PNG" width="500" height="100" >
-></p>
+> </p>
 
 >##### Algorithm:
 >+  Best case: O(1)
@@ -130,19 +131,22 @@ will start from the first index and stop searching if the data is found or the l
       else
           NOT FOUND
 
+      // After looking at the algorithm, you can see that there is an example in the above file(Linear_Search.java) to better understand.
+
 
 >### Binary Search
 >
 > **To use binary search, your array / list must be sorted. If it is not sorted then you cannot do binary search. Or else you have to sort the array / list.**
 > <p align="center">
 >  <img src="https://user-images.githubusercontent.com/69858580/107189030-dcb90280-6a12-11eb-9d3c-9e0bd9de0bb8.PNG" width="500" height="150" >
-></p>
+> </p>
 >
 >
 >+  Best case: O(1)
 >+  Worst Case: O(n)
 
-       Algorithm:
+       'Algorithm':
+       '''java
 
        low = 1                          //Start position
        high = n                         //Last position
@@ -156,11 +160,32 @@ will start from the first index and stop searching if the data is found or the l
               Xm < Z : low = mid + 1    // z = searching number
               Xm > Z : high = mid - 1
               Xm == Z : flag = true
-
-       if flag == true
+       ```javascript
+       if (flag == true){
           FOUND
+        }
        else
           NOT FOUND
+       ```
 
        // After looking at the algorithm, you can see that there is an example in the above file(Binary_Search.java) to better understand. 
 
+
+
+# 2. Sorting Algorithms
+>- [x] **Sorting refers to arranging data in a particular format.**
+>
+>- [x] **Most common orders are in numerical or lexicographical
+order.**
+>###### Why Sorting Algorithms:
+>+ The importance of sorting lies in the fact that data
+   searching can be optimized to a very high level, if data is
+   stored in a sorted manner.
+>
+>+ Sorting is also used to represent data in more readable formats.
+> 
+>###### We will Learn: 
+> 1. Selection Sort
+> 2. Insertion Sort
+> 3. Merge Sort
+> 4. Quick Sort
