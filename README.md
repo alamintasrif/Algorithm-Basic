@@ -108,30 +108,31 @@ or value is found.
 >+  Best case: O(1)
 >+  Worst Case: O(n)
 
-      // First way...
-      i = 1 
-      while i < n && Z != X[i] do           // Z = searching variable
-          i = i+1
+```javascript
+   // First way...
+   i = 1 
+   while i < n && Z != X[i] do           // Z = searching variable
+      i = i+1
 
-      if i < n then
-          FOUND
-      else
-          NOT FOUND
+   if i < n then
+      FOUND
+   else
+      NOT FOUND
 
 
-      // Second Way...
-      flag = FALSE
-      for i = 1 to n
-          if A[i] == key        // key = searching variable
-              flag = TRUE;
+   // Second Way...
+   flag = FALSE
+   for i = 1 to n
+      if A[i] == key        // key = searching variable
+         flag = TRUE;
     
-      if flag == TRUE
-          FOUND
-      else
-          NOT FOUND
+   if flag == TRUE
+     FOUND
+   else
+     NOT FOUND
 
-      // After looking at the algorithm, you can see that there is an example in the above file(Linear_Search.java) to better understand.
-
+   // After looking at the algorithm, you can see that there is an example in the above file[Linear_Search.java] to better understand.
+```
 
 >### Binary Search
 >
@@ -145,29 +146,29 @@ or value is found.
 >+  Worst Case: O(n)
 
 ```javascript
-       Algorithm:
+   Algorithm:
 
-       low = 1                          //Start position
-       high = n                         //Last position
-       flag = false
+   low = 1                          //Start position
+   high = n                         //Last position
+   flag = false
 
-       while low <= high and flag = = false do
-          mid = (low + high) / 2
-          Xm = A[mid]                   // Xm = a veriable where we store our mid variable
+   while low <= high and flag = = false do
+        mid = (low + high) / 2
+        Xm = A[mid]                   // Xm = a veriable where we store our mid variable
 
-          case:
-              Xm < Z : low = mid + 1    // z = searching number
-              Xm > Z : high = mid - 1
-              Xm == Z : flag = true
+        case:
+            Xm < Z : low = mid + 1    // z = searching number
+            Xm > Z : high = mid - 1
+            Xm == Z : flag = true
        
-       if (flag == true){
-          FOUND
-        }
-       else
-          NOT FOUND
+   if (flag == true){
+      FOUND
+   }
+   else
+      NOT FOUND
        
 
-       After looking at the algorithm, you can see that there is an example in the above file[Binary_Search.java](https://github.com/DeveloperKits/Algorithm-Basic/blob/master/src/Searching_Algorithm/Linear_Search.java) to better understand. 
+   After looking at the algorithm, you can see that there is an example in the above file[Binary_Search.java](https://github.com/DeveloperKits/Algorithm-Basic/blob/master/src/Searching_Algorithm/Linear_Search.java) to better understand. 
 
 ```
 
