@@ -201,13 +201,13 @@ order.**
 
 
 ```javascript
+Idea:
 1. Find the smallest element in the array
 2. Exchange it with the element in the first position
 3. Find the second smallest element and exchange it with the element in the second position
 4. Continue until the array is sorted
 
 Algorithm:
-
 n ← length[A]
 for i ← 1 to n - 1
     min ← i
@@ -236,7 +236,6 @@ Idea:
 5. These cards were originally the top cards of the pile on the table
 
 Algorithm:
-
 InsertionSort (A){
 
     for j = 2 to length(Array)
