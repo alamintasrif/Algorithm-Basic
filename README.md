@@ -131,7 +131,7 @@ or value is found.
    else
      NOT FOUND
 
-   // After looking at the algorithm, you can see that there is an example in the above file[Linear_Search.java](https://github.com/DeveloperKits/Algorithm-Basic/blob/789f200a0186a1df81f6e730b6f9bfb6883e0dc7/src/Searching_Algorithm/Linear_Search.java) to better understand.
+   After looking at the algorithm, you can see that there is an example in the above file[Linear_Search.java] to better understand.
 ```
 
 >### Binary Search
