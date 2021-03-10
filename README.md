@@ -16,8 +16,10 @@
 
 
 >##### Different types of Algorithms:
->- [x] Searching Algorithms
->- [x] Sorting Algorithms
+>- [x] [Searching Algorithms]
+>   - [x] [Linear Search]
+>   - [x] [Binary Search]
+>- [x] [Sorting Algorithms]
 >- [ ] Divide and conquer algorithms
 >- [ ] Recursive algorithms
 >- [ ] Backtracking algorithms
@@ -131,7 +133,7 @@ or value is found.
    else
      NOT FOUND
 
-   After looking at the algorithm, you can see that there is an example in the above file[Linear_Search.java] to better understand.
+   After looking at the algorithm, you can see that there is an example in the above file [Linear_Search.java] to better understand.
 ```
 
 >### Binary Search
@@ -168,7 +170,7 @@ or value is found.
       NOT FOUND
        
 
-   After looking at the algorithm, you can see that there is an example in the above file[Binary_Search.java](https://github.com/DeveloperKits/Algorithm-Basic/blob/789f200a0186a1df81f6e730b6f9bfb6883e0dc7/src/Searching_Algorithm/Binary_Search.java) to better understand. 
+   After looking at the algorithm, you can see that there is an example in the above file [Binary_Search.java] to better understand. 
 
 ```
 
@@ -193,6 +195,9 @@ order.**
 
 
 >### Selection Sort
+> + Best case: O(n^2)
+> + Average Case: O(n^2)
+> + Worst Case: O(n^2)
 
 
 ```javascript
@@ -212,4 +217,43 @@ for i ← 1 to n - 1
             min ← j
 
     exchange A[i] ↔ A[min]
+    
+After looking at the algorithm, you can see that there is an example in the above file [Selection.java] to better understand.        
 ```
+
+>### Insertion Sort
+> + Best case: O(n)
+> + Average Case: O(n^2)
+> + Worst Case: O(n^2)
+
+
+```javascript
+Idea:
+1. Start with an empty left hand and the cards facing down on the table.
+2. Remove one card at a time from the table, and insert it into the correct position in the left hand
+3. Compare it with each of the cards already in the hand, from right to left
+4. The cards held in the left hand are sorted 
+5. These cards were originally the top cards of the pile on the table
+
+Algorithm:
+
+InsertionSort (A){
+
+    for j = 2 to length(Array)
+        key = Array[j]
+        i = j - 1
+
+        while ( i > 0 && Array[ i ] > key ){
+            
+            A[i+1] = Array[i]
+            i = i -1
+
+        }
+        Array[i + 1] = key
+
+    }
+    
+After looking at the algorithm, you can see that there is an example in the above file [Insertion.java] to better understand.        
+```
+
+

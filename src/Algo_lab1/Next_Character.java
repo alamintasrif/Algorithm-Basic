@@ -3,7 +3,7 @@ package Algo_lab1;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class example1 {
+public class Next_Character {
     public static void main(String[] args) {
 
         char[] alphabet = new char[] {
@@ -38,6 +38,6 @@ public class example1 {
                 input = input.replace(alphabet[i], alphabet[(i+1) % alphabet.length]);
             }
         }
-        System.out.println(input);
+        System.out.println("New character: " + input);
     }
 }

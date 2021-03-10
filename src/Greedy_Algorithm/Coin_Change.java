@@ -21,8 +21,8 @@ public class Coin_Change {
     }
 
     public static void main(String[] args) {
-        int[] coins = {10, 20, 50, 100, 500, 1000};
-        int n = 40;
+        int[] coins = {1, 3, 4, 5, 10, 20, 50, 100, 500, 1000};
+        int n = 46;
 
         int result = coinChangeGreedy(coins, n);
 

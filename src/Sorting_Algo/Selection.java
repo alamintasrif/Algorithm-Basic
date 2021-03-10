@@ -1,4 +1,4 @@
-package Algo_lab3.Algo_lab3;
+package Sorting_Algo;
 
 import java.util.Scanner;
 
@@ -20,6 +20,7 @@ public class Selection {
 
         for(i=0; i<(size-1); i++) {
             small = arr[i];
+
             for(j=(i+1); j<size; j++)
             {
                 if(small>arr[j])

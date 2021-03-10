@@ -2,7 +2,7 @@ package Algo_lab2;
 
 import java.util.Scanner;
 
-public class Array4 {
+public class Search_How_Many_Time_Have {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int N = 0, search_number;
@@ -26,7 +26,7 @@ public class Array4 {
         }
 
         if (N > 0){
-            System.out.println(search_number + " is found" + N + " times in your list");
+            System.out.println(search_number + " is found " + N + " times in your list");
         }
 
     }

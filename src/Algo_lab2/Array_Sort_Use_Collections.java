@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class Array1_sort {
+public class Array_Sort_Use_Collections {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int N1, N2;
@@ -20,7 +20,7 @@ public class Array1_sort {
             arrayList.add(answer);
         }
 
-        System.out.println("Size of Array 1: ");
+        System.out.println("Size of Array 2: ");
         N2 = scanner.nextInt();
         for (int i=0; i<N2; i++){
             answer = scanner.nextDouble();
@@ -30,7 +30,7 @@ public class Array1_sort {
         Collections.sort(arrayList);
 
         for (int i = 0; i < arrayList.size(); i++)
-            System.out.print(arrayList.get(i) + "\n");
+            System.out.print(arrayList.get(i) + "\t");
 
 
     }

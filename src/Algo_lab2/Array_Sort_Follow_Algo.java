@@ -3,7 +3,7 @@ package Algo_lab2;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Array1 {
+public class Array_Sort_Follow_Algo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int N1, N2, k = 0;
@@ -12,6 +12,7 @@ public class Array1 {
         // Input for first array
         System.out.println("Size of Array 1: ");
         N1 = scanner.nextInt();
+        System.out.println("Enter array number: ");
         double[] array1 = new double[N1];
 
         for (int i=0; i<N1; i++){
@@ -21,6 +22,7 @@ public class Array1 {
         // Input for second array
         System.out.println("Size of Array 2: ");
         N2 = scanner.nextInt();
+        System.out.println("Enter array number: ");
         double[] array2 = new double[N2];
 
         for (int i=0; i<N2; i++){
@@ -52,7 +54,7 @@ public class Array1 {
         }
 
         for (int i=0; i< array3.length; i++){
-            System.out.println(array3[i]);
+            System.out.print(array3[i] + "\t");
         }
 
 
