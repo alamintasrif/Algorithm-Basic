@@ -18,7 +18,7 @@ public class Huffman_Encode_Decode {
 
     public static void main(String[] args) {
 
-        String test = "ABCDAAFGHQQEZA DAS @#$% Akash Das";
+        String test = "You are Fuck Boy";
         System.out.println("Original Text = "+test);
         String s = encode(test);
         decode(s);
