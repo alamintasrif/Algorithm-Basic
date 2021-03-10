@@ -167,7 +167,7 @@ or value is found.
           NOT FOUND
        
 
-       // After looking at the algorithm, you can see that there is an example in the above file[Binary_Search.java](https://github.com/DeveloperKits/Algorithm-Basic/blob/master/src/Searching_Algorithm/Linear_Search.java) to better understand. 
+       After looking at the algorithm, you can see that there is an example in the above file[Binary_Search.java](https://github.com/DeveloperKits/Algorithm-Basic/blob/master/src/Searching_Algorithm/Linear_Search.java) to better understand. 
 
 ```
 
