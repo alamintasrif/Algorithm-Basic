@@ -31,7 +31,7 @@ public class Huffman_Coding {
 
     public static void main(String[] args) {
 
-        String message = "MISSISSIPPI RIVER";
+        String message = "Akash##Akash";
 
         // Convert the string to char array
 
@@ -150,6 +150,8 @@ public class Huffman_Coding {
                 }
             }
             codedString += code;
+            System.out.println("The String is " + messageArray[i]);
+            System.out.println("The coded is " + code);
         }
         System.out.println();
         System.out.println("The coded string is " + codedString);
